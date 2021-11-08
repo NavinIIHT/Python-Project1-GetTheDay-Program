@@ -21,7 +21,7 @@ class ExceptionalTest(unittest.TestCase):
 
     def test_type_error_for_day(self):
         try:
-            get_week_day(12-5-2021)
+            get_week_day("12-5-2021")
             with open("../output_exception_revised.txt","a") as f:
                 f.write("TestTypeErrorForDay=False\n")
                 print("TestTypeErrorForDay = Failed")
